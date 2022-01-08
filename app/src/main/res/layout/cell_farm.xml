@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/farm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farm 1"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/farm_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working"
+            android:textColor="@color/primary_text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/farm_title" />
+
+        <TextView
+            android:id="@+id/farm_sensors_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:alpha="0.87"
+            android:text="0 sensors"
+            android:textColor="@color/secondary_text_color"
+            app:layout_constraintStart_toStartOf="@+id/farm_title"
+            app:layout_constraintTop_toBottomOf="@+id/farm_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_color"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/farm_sensors_count"
+            app:layout_constraintTop_toBottomOf="@+id/farm_sensors_count" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

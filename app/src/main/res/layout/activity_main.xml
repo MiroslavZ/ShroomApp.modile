@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.main.MainActivity">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <Button
+            android:id="@+id/button_a_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:text="Login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_a_farms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="My Farms"
+            app:layout_constraintStart_toStartOf="@+id/button_a_login"
+            app:layout_constraintTop_toBottomOf="@+id/button_a_login" />
+
+        <Button
+            android:id="@+id/button_a_sensors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="My Sensors"
+            app:layout_constraintStart_toStartOf="@+id/button_a_farms"
+            app:layout_constraintTop_toBottomOf="@+id/button_a_farms" />
+
+        <Button
+            android:id="@+id/button_a_sensor_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sensor stats"
+            app:layout_constraintStart_toStartOf="@+id/button_a_sensors"
+            app:layout_constraintTop_toBottomOf="@+id/button_a_sensors" />
+
+        <Button
+            android:id="@+id/button_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Farm Notifications"
+            app:layout_constraintStart_toStartOf="@+id/button_a_sensor_stats"
+            app:layout_constraintTop_toBottomOf="@+id/button_a_sensor_stats" />
+
+        <Button
+            android:id="@+id/button_a_add_farm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Add Farm"
+            app:layout_constraintStart_toStartOf="@+id/button_notifications"
+            app:layout_constraintTop_toBottomOf="@+id/button_notifications" />
+
+        <Button
+            android:id="@+id/button_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Profile"
+            app:layout_constraintStart_toStartOf="@+id/button_a_add_farm"
+            app:layout_constraintTop_toBottomOf="@+id/button_a_add_farm" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ShroomApp"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/color_primary_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

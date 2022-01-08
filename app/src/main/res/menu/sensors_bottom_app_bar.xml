@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/show_notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Notifications"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/refresh_config"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="Refresh config"
+        app:showAsAction="always"/>
+</menu>
